@@ -1,0 +1,20 @@
+{
+  "name": "traditional-web-app-express",
+  "version": "1.0.0",
+  "description": "An e-commerce serving HTML, CSS and JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exemplar-codes/traditional-web-app-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exemplar-codes/traditional-web-app-express/issues"
+  },
+  "homepage": "https://github.com/exemplar-codes/traditional-web-app-express#readme"
+}
