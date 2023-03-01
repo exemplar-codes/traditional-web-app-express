@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+const path = require("node:path");
+
 const app = express();
 app.set("easy-app-root-path", __dirname);
 
@@ -16,7 +18,7 @@ app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).send("<h1>Page not found</h1>");
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
 });
 
 app.listen(8000);
