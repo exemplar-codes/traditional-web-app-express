@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
+app.set("easy-app-root-path", __dirname);
 
 app.use(cors()); // ignore
 
