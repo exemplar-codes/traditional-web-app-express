@@ -3,6 +3,8 @@ const express = require("express");
 const router = express.Router();
 const path = require("node:path");
 
+const rootPath = require("../utils/path");
+
 router.get("/", (req, res, next) => {
   // res.send("<h1>Hello from Express!</h1>");
 
@@ -33,8 +35,12 @@ router.get("/", (req, res, next) => {
     req.app.get("easy-app-root-path"),
     ..."views/shop.html".split("/")
   );
+  const shopHTMLFilePath3_3 = path.join(
+    rootPath,
+    ..."views/shop.html".split("/")
+  );
 
-  res.sendFile(shopHTMLFilePath3_1);
+  res.sendFile(shopHTMLFilePath3_3);
 });
 
 module.exports = router;
